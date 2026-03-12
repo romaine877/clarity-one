@@ -1,0 +1,57 @@
+<svg width="260" height="60" viewBox="0 0 260 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- ── Mark ─────────────────────────────────── -->
+  <!-- Outer lens -->
+  <path
+    d="M 4 30 Q 30 3 56 30 Q 30 57 4 30 Z"
+    stroke="#5db8e8"
+    stroke-width="1.4"
+    fill="none"
+  />
+  <!-- Inner ring -->
+  <circle cx="30" cy="30" r="11"
+    stroke="#5db8e8"
+    stroke-width="1"
+    stroke-opacity="0.45"
+    fill="none"
+  />
+  <!-- Centre dot -->
+  <circle cx="30" cy="30" r="4" fill="#5db8e8" />
+  <!-- Dashed outer ring -->
+  <circle cx="30" cy="30" r="22"
+    stroke="#5db8e8"
+    stroke-width="0.6"
+    stroke-opacity="0.18"
+    fill="none"
+    stroke-dasharray="3 6"
+  />
+
+  <!-- ── Wordmark ─────────────────────────────── -->
+  <!-- Thin vertical separator -->
+  <line x1="74" y1="14" x2="74" y2="46"
+    stroke="#5db8e8"
+    stroke-opacity="0.2"
+    stroke-width="1"
+  />
+
+  <!-- "CLARITY ONE" — primary logotype -->
+  <text
+    x="86"
+    y="33"
+    font-family="Syne, system-ui, sans-serif"
+    font-size="18"
+    font-weight="700"
+    letter-spacing="2.5"
+    fill="#e8edf4"
+  >CLARITY ONE</text>
+
+  <!-- "STUDIOS" — sub-label -->
+  <text
+    x="87"
+    y="49"
+    font-family="Inter, system-ui, sans-serif"
+    font-size="8.5"
+    font-weight="300"
+    letter-spacing="5.5"
+    fill="#5db8e8"
+  >STUDIOS</text>
+</svg>
