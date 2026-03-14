@@ -25,15 +25,29 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center select-none" aria-label="Clarity One Studios">
+        <a href="#" className="flex items-center gap-3 select-none" aria-label="Clarity One Studios">
           <Image
-            src="/logo.svg"
-            alt="Clarity One Studios"
-            width={200}
+            src="/logo.png"
+            alt=""
+            width={46}
             height={46}
             priority
             style={{ height: "46px", width: "auto" }}
           />
+          <span className="flex flex-col leading-tight">
+            <span
+              className="font-bold tracking-[0.12em] uppercase text-[#e8edf4]"
+              style={{ fontFamily: "var(--font-syne), sans-serif", fontSize: "1.05rem" }}
+            >
+              Clarity One
+            </span>
+            <span
+              className="font-light tracking-[0.35em] uppercase text-[#5db8e8]"
+              style={{ fontFamily: "var(--font-inter), sans-serif", fontSize: "0.5rem" }}
+            >
+              Studios
+            </span>
+          </span>
         </a>
 
         {/* Desktop links */}

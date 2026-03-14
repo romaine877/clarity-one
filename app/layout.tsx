@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, Inter } from "next/font/google";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 const syne = Syne({
@@ -20,6 +21,9 @@ export const metadata: Metadata = {
   title: "Clarity One Studios — Creative Design Agency",
   description:
     "Premium creative studio specializing in brand identity, digital experiences, and creative direction.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +35,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${syne.variable} ${inter.variable} antialiased`}>
         {children}
+        <Toaster position="bottom-center" theme="dark" richColors />
       </body>
     </html>
   );

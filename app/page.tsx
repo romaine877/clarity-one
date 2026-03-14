@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Nav from "./components/Nav";
 import AnimatedSection from "./components/AnimatedSection";
+import ContactForm, { MailtoLink } from "./components/ContactForm";
 
 /* ─── SVG: Hero Graphic ───────────────────────────────────────── */
 function HeroGraphic() {
@@ -385,7 +386,7 @@ export default function Home() {
             className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 hero-stats"
             style={{ color: "var(--muted)" }}
           >
-            <span className="section-label text-[0.6rem]">Scroll</span>
+          
             <div
               className="w-px h-10"
               style={{
@@ -712,7 +713,7 @@ export default function Home() {
           {/* Grid */}
           <div className="absolute inset-0 grid-bg opacity-60" />
 
-          <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+          <div className="relative z-10 max-w-xl mx-auto px-6 text-center">
             <AnimatedSection>
               <div className="flex flex-col items-center gap-8">
                 <span className="section-label">Get In Touch</span>
@@ -730,6 +731,9 @@ export default function Home() {
                     exceptional?
                   </span>
                 </h2>
+
+                <MailtoLink />
+
                 <p
                   style={{
                     color: "var(--muted)",
@@ -743,23 +747,7 @@ export default function Home() {
                   Tell us about your project. We&apos;ll respond within 48 hours with
                   thoughts on how we can bring it to life.
                 </p>
-
-                <div className="flex flex-wrap items-center justify-center gap-4">
-                  <a
-                    href="mailto:hello@clarityonestudios.com"
-                    className="btn-primary"
-                  >
-                    Start a Conversation
-                    <ArrowRight />
-                  </a>
-                  <a
-                    href="mailto:hello@clarityonestudios.com"
-                    className="link-line text-sm"
-                    style={{ color: "var(--muted)", fontFamily: "var(--font-inter), sans-serif" }}
-                  >
-                    hello@clarityonestudios.com
-                  </a>
-                </div>
+                <ContactForm />
               </div>
             </AnimatedSection>
           </div>
@@ -778,14 +766,28 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
 
           {/* Logo */}
-          <a href="#" className="flex items-center select-none" aria-label="Clarity One Studios">
+          <a href="#" className="flex items-center gap-2.5 select-none" aria-label="Clarity One Studios">
             <Image
-              src="/logo.svg"
-              alt="Clarity One Studios"
-              width={180}
+              src="/logo.png"
+              alt=""
+              width={42}
               height={42}
               style={{ height: "42px", width: "auto", opacity: 0.85 }}
             />
+            <span className="flex flex-col leading-tight">
+              <span
+                className="font-bold tracking-[0.12em] uppercase text-[#e8edf4]"
+                style={{ fontFamily: "var(--font-syne), sans-serif", fontSize: "0.95rem" }}
+              >
+                Clarity One
+              </span>
+              <span
+                className="font-light tracking-[0.35em] uppercase text-[#5db8e8]"
+                style={{ fontFamily: "var(--font-inter), sans-serif", fontSize: "0.45rem" }}
+              >
+                Studios
+              </span>
+            </span>
           </a>
 
           {/* Links */}
