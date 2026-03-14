@@ -19,9 +19,10 @@ export default function Nav() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "py-4 bg-[#050810]/90 backdrop-blur-2xl border-b border-white/5"
+          ? "py-4 bg-[#050810]/92 backdrop-blur-2xl border-b border-white/6"
           : "py-7"
       }`}
+      style={scrolled ? { boxShadow: "0 1px 40px rgba(0,0,0,0.4)" } : {}}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
