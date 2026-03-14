@@ -527,7 +527,7 @@ export default function Home() {
                     Software Development Agency
                   </span>
                   <span className="w-7 h-px" style={{ background: "var(--accent)", opacity: 0.45 }} />
-                  <span className="section-label" style={{ color: "var(--muted)" }}>Est. 2019</span>
+                  <span className="section-label" style={{ color: "var(--muted)" }}>Est. 2026</span>
                 </div>
 
                 <h1
@@ -1057,7 +1057,7 @@ export default function Home() {
                 textTransform: "uppercase",
               }}
             >
-              Toronto, Canada — Est. 2019
+              Jamaica — Est. 2026
             </p>
           </div>
 
