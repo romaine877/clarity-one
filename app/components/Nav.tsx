@@ -72,7 +72,7 @@ export default function Nav() {
           className="hidden md:inline-flex btn-outline text-xs"
           style={{ padding: "10px 24px" }}
         >
-          Let&apos;s Talk
+          Discuss Project
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
@@ -110,7 +110,7 @@ export default function Nav() {
             </a>
           ))}
           <a href="#contact" className="btn-primary mt-2 justify-center" style={{ padding: "12px 24px" }}>
-            Let&apos;s Talk
+            Discuss Project
           </a>
         </div>
       </div>

@@ -18,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Clarity One Studios — Creative Design Agency",
+  title: "Clarity One Studios | Software Development Agency",
   description:
-    "Premium creative studio specializing in brand identity, digital experiences, and creative direction.",
+    "Software development agency building custom web apps, internal tools, and digital platforms for growing businesses.",
   icons: {
     icon: "/logo.png",
   },

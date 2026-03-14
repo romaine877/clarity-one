@@ -126,6 +126,41 @@ function IconDirection() {
     </svg>
   );
 }
+function IconWebsite() {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-10 h-10">
+      <rect x="7" y="10" width="34" height="28" rx="4" stroke="#5db8e8" strokeWidth="1.5" strokeOpacity="0.55" />
+      <line x1="7" y1="18" x2="41" y2="18" stroke="#5db8e8" strokeWidth="1.2" strokeOpacity="0.35" />
+      <circle cx="12" cy="14" r="1.5" fill="#5db8e8" fillOpacity="0.7" />
+      <circle cx="17" cy="14" r="1.5" fill="#5db8e8" fillOpacity="0.45" />
+      <path d="M16 28H24" stroke="#5db8e8" strokeWidth="1.5" strokeOpacity="0.5" strokeLinecap="round" />
+      <path d="M16 32H30" stroke="#5db8e8" strokeWidth="1.5" strokeOpacity="0.24" strokeLinecap="round" />
+    </svg>
+  );
+}
+function IconMobile() {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-10 h-10">
+      <rect x="14" y="6" width="20" height="36" rx="5" stroke="#5db8e8" strokeWidth="1.5" strokeOpacity="0.55" />
+      <rect x="18" y="12" width="12" height="18" rx="2" fill="#5db8e8" fillOpacity="0.08" />
+      <line x1="20" y1="35" x2="28" y2="35" stroke="#5db8e8" strokeWidth="1.5" strokeOpacity="0.35" strokeLinecap="round" />
+      <circle cx="24" cy="24" r="4" stroke="#5db8e8" strokeWidth="1.2" strokeOpacity="0.4" />
+    </svg>
+  );
+}
+function IconIntegration() {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-10 h-10">
+      <rect x="8" y="11" width="11" height="11" rx="2" stroke="#5db8e8" strokeWidth="1.5" strokeOpacity="0.5" />
+      <rect x="29" y="11" width="11" height="11" rx="2" stroke="#5db8e8" strokeWidth="1.5" strokeOpacity="0.5" />
+      <rect x="18.5" y="27" width="11" height="11" rx="2" stroke="#5db8e8" strokeWidth="1.5" strokeOpacity="0.5" />
+      <path d="M19 16.5H29" stroke="#5db8e8" strokeWidth="1.2" strokeOpacity="0.35" />
+      <path d="M24 22V27" stroke="#5db8e8" strokeWidth="1.2" strokeOpacity="0.35" />
+      <circle cx="24" cy="24" r="3" fill="#5db8e8" fillOpacity="0.16" />
+      <circle cx="24" cy="24" r="1.5" fill="#5db8e8" fillOpacity="0.7" />
+    </svg>
+  );
+}
 
 /* ─── SVG: Portfolio Thumbnails ───────────────────────────────── */
 function ThumbArc() {
@@ -218,49 +253,67 @@ function ArrowRight({ size = 16 }: { size?: number }) {
 /* ─── Page ────────────────────────────────────────────────────── */
 export default function Home() {
   const marqueeItems = [
-    "Brand Identity",
-    "Digital Experience",
-    "Creative Direction",
-    "Visual Storytelling",
-    "Motion Design",
-    "Editorial Design",
-    "Strategy & Positioning",
-    "Art Direction",
+    "Custom Web Applications",
+    "Product Engineering",
+    "Internal Tools",
+    "Platform Modernization",
+    "Automation & AI Workflows",
+    "Customer Portals",
+    "Technical Strategy",
+    "UX for Complex Systems",
   ];
 
   const services = [
     {
       icon: <IconBrand />,
       num: "01",
-      title: "Brand Identity",
-      desc: "We build cohesive visual identities that communicate who you are before a single word is read — logos, systems, typography, and colour that hold up across every medium.",
+      title: "Web Applications",
+      desc: "Custom platforms, SaaS products, and business systems built for performance, usability, and long-term growth.",
+    },
+    {
+      icon: <IconWebsite />,
+      num: "02",
+      title: "Websites",
+      desc: "Marketing sites, landing pages, and company websites that feel polished, load fast, and support your brand and sales goals.",
+    },
+    {
+      icon: <IconMobile />,
+      num: "03",
+      title: "Mobile Apps",
+      desc: "Mobile experiences built for teams that need their product or service in customers' hands on iOS and Android.",
     },
     {
       icon: <IconDigital />,
-      num: "02",
-      title: "Digital Experience",
-      desc: "From web design to interactive platforms, we craft digital environments that balance beauty with behaviour — intuitive, performant, and purposefully designed.",
+      num: "04",
+      title: "Internal Tools",
+      desc: "Dashboards, portals, and operational software that streamline workflows and replace manual processes.",
+    },
+    {
+      icon: <IconIntegration />,
+      num: "05",
+      title: "Systems & Integrations",
+      desc: "APIs, third-party integrations, and connected systems that keep your tools in sync and your operations moving.",
     },
     {
       icon: <IconDirection />,
-      num: "03",
-      title: "Creative Direction",
-      desc: "We lead the creative vision for campaigns, editorial, and brand activations — ensuring every touchpoint expresses the same singular, elevated point of view.",
+      num: "06",
+      title: "Modernization & Support",
+      desc: "Improvements for legacy products, cleanup of technical debt, and ongoing support to keep important software healthy.",
     },
   ];
 
   const portfolio = [
-    { thumb: <ThumbArc />,   num: "01", cat: "Branding",  title: "Arc Identity" },
-    { thumb: <ThumbNodes />, num: "02", cat: "Digital",   title: "Meridian Platform" },
-    { thumb: <ThumbSlice />, num: "03", cat: "Campaign",  title: "Nova Campaign" },
-    { thumb: <ThumbGrid />,  num: "04", cat: "Editorial", title: "Void Editorial" },
+    { thumb: <ThumbArc />,   num: "01", cat: "SaaS Product", title: "Customer-facing platform build" },
+    { thumb: <ThumbNodes />, num: "02", cat: "Operations",   title: "Internal workflow and reporting hub" },
+    { thumb: <ThumbSlice />, num: "03", cat: "Automation",   title: "AI-assisted knowledge workflow" },
+    { thumb: <ThumbGrid />,  num: "04", cat: "Client Portal", title: "Secure self-service experience" },
   ];
 
   const stats = [
-    { num: "50+",  label: "Projects Delivered" },
-    { num: "5",    label: "Years in Practice" },
-    { num: "30+",  label: "Brand Clients" },
-    { num: "12",   label: "Design Awards" },
+    { num: "01", label: "Business-first discovery and scoping" },
+    { num: "02", label: "Senior hands-on design and engineering" },
+    { num: "03", label: "Clear milestones, feedback, and delivery" },
+    { num: "04", label: "Post-launch iteration and support" },
   ];
 
   return (
@@ -300,7 +353,7 @@ export default function Home() {
                     className="section-label"
                     style={{ color: "var(--accent)" }}
                   >
-                    Creative Studio
+                    Software Development Agency
                   </span>
                   <span
                     className="w-8 h-px"
@@ -319,10 +372,8 @@ export default function Home() {
                     color: "var(--text)",
                   }}
                 >
-                  Design that{" "}
-                  <span className="text-gradient">speaks</span>
-                  <br />
-                  before words do.
+                  Software built with{" "}
+                  <span className="text-gradient">clarity.</span>
                 </h1>
 
                 <p
@@ -335,13 +386,13 @@ export default function Home() {
                     lineHeight: "1.8",
                   }}
                 >
-                  Clarity One Studios crafts brand identities, digital experiences,
-                  and visual stories for brands that refuse to be ordinary.
+                  We build web apps, internal tools, and digital platforms for
+                  teams that need senior execution and reliable delivery.
                 </p>
 
                 <div className="hero-ctas flex flex-wrap gap-4">
-                  <a href="#work" className="btn-primary">
-                    View Our Work
+                  <a href="#services" className="btn-primary">
+                    Explore Services
                     <ArrowRight />
                   </a>
                   <a href="#contact" className="btn-outline">
@@ -431,7 +482,7 @@ export default function Home() {
         <section id="services" className="max-w-7xl mx-auto px-6 py-32">
           <AnimatedSection>
             <div className="flex flex-col gap-3 mb-16">
-              <span className="section-label">What We Do</span>
+              <span className="section-label">Capabilities</span>
               <h2
                 className="font-display"
                 style={{
@@ -442,14 +493,14 @@ export default function Home() {
                   maxWidth: "480px",
                 }}
               >
-                Three disciplines.
+                Software that removes friction,
                 <br />
-                <span style={{ color: "var(--accent)" }}>One vision.</span>
+                <span style={{ color: "var(--accent)" }}>creates leverage, and scales.</span>
               </h2>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
             {services.map(({ icon, num, title, desc }, i) => (
               <AnimatedSection key={num} delay={i * 120}>
                 <div
@@ -512,7 +563,7 @@ export default function Home() {
             <AnimatedSection>
               <div className="flex items-end justify-between mb-16 gap-6 flex-wrap">
                 <div className="flex flex-col gap-3">
-                  <span className="section-label">Selected Work</span>
+                  <span className="section-label">Representative Engagements</span>
                   <h2
                     className="font-display"
                     style={{
@@ -522,7 +573,9 @@ export default function Home() {
                       lineHeight: 1.2,
                     }}
                   >
-                    Projects that define us.
+                    The kinds of software
+                    <br />
+                    teams hire us to deliver.
                   </h2>
                 </div>
                 <a
@@ -530,7 +583,7 @@ export default function Home() {
                   className="link-line text-sm flex items-center gap-2"
                   style={{ color: "var(--muted)", fontFamily: "var(--font-inter), sans-serif" }}
                 >
-                  View all work
+                  Discuss a similar project
                   <ArrowRight size={14} />
                 </a>
               </div>
@@ -591,7 +644,7 @@ export default function Home() {
                         className="btn-outline text-xs"
                         style={{ padding: "10px 24px" }}
                       >
-                        View Project
+                        Similar engagement
                         <ArrowRight size={12} />
                       </span>
                     </div>
@@ -615,7 +668,7 @@ export default function Home() {
               <AnimatedSection>
                 <div className="flex flex-col gap-8">
                   <div className="flex flex-col gap-3">
-                    <span className="section-label">Our Story</span>
+                    <span className="section-label">How We Work</span>
                     <h2
                       className="font-display"
                       style={{
@@ -625,12 +678,10 @@ export default function Home() {
                         lineHeight: 1.2,
                       }}
                     >
-                      Built on the belief that design
+                      A software partner that
                       <br />
-                      should{" "}
-                      <span className="text-gradient">
-                        move people.
-                      </span>
+                      thinks beyond{" "}
+                      <span className="text-gradient">delivery tickets.</span>
                     </h2>
                   </div>
 
@@ -645,19 +696,22 @@ export default function Home() {
                     }}
                   >
                     <p>
-                      Clarity One Studios was founded in 2019 with a singular conviction:
-                      that great design doesn&apos;t just look good — it thinks well. We work at the
-                      intersection of craft and strategy, creating work that earns attention and holds it.
+                      Clarity One Studios helps companies move from vague requirements,
+                      brittle tools, and stalled product ideas to software that teams can
+                      actually run on. We work best with founders, operators, and growing
+                      businesses that need senior product and engineering judgment without the
+                      overhead of building everything in-house first.
                     </p>
                     <p>
-                      We collaborate with founders, creative directors, and ambitious brands who understand
-                      that how you look is how you&apos;re remembered. Every project is approached with
-                      rigour, restraint, and a ruthless commitment to clarity.
+                      Our process is deliberate: align on business goals, reduce delivery
+                      risk early, ship in focused increments, and stay close to outcomes after
+                      launch. We care about usability, architecture, maintainability, and the
+                      day-two realities of owning software.
                     </p>
                   </div>
 
                   <a href="#contact" className="btn-primary self-start">
-                    Work With Us
+                    Talk Through Your Project
                     <ArrowRight />
                   </a>
                 </div>
@@ -716,7 +770,7 @@ export default function Home() {
           <div className="relative z-10 max-w-xl mx-auto px-6 text-center">
             <AnimatedSection>
               <div className="flex flex-col items-center gap-8">
-                <span className="section-label">Get In Touch</span>
+                <span className="section-label">Start a Conversation</span>
                 <h2
                   className="font-display"
                   style={{
@@ -727,9 +781,7 @@ export default function Home() {
                   }}
                 >
                   Ready to build something{" "}
-                  <span className="text-gradient">
-                    exceptional?
-                  </span>
+                  <span className="text-gradient">exceptional?</span>
                 </h2>
 
                 <MailtoLink />
@@ -744,8 +796,8 @@ export default function Home() {
                     maxWidth: "500px",
                   }}
                 >
-                  Tell us about your project. We&apos;ll respond within 48 hours with
-                  thoughts on how we can bring it to life.
+                  Share the project, timeline, and what success looks like.
+                  We&apos;ll reply within 48 hours.
                 </p>
                 <ContactForm />
               </div>
