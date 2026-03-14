@@ -59,7 +59,7 @@ export default function ContactForm() {
 
       if (!res.ok) throw new Error();
 
-      toast.success("Message sent — we'll be in touch within 48 hours.");
+      toast.success("Message sent. We'll be in touch within 48 hours.");
       setEmail("");
       setMessage("");
     } catch {
@@ -76,7 +76,7 @@ export default function ContactForm() {
     >
       <input
         type="email"
-        placeholder="Email"
+        placeholder="Work email"
         required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
@@ -98,7 +98,7 @@ export default function ContactForm() {
       />
 
       <textarea
-        placeholder="Message"
+        placeholder="What are you building? Include goals, timeline, budget, or existing systems if helpful."
         required
         rows={7}
         value={message}
@@ -140,7 +140,7 @@ export default function ContactForm() {
           width: "100%",
         }}
       >
-        {loading ? "Sending…" : "Send Message"}
+        {loading ? "Sending..." : "Request a Consultation"}
       </button>
     </form>
   );

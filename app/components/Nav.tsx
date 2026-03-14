@@ -19,9 +19,10 @@ export default function Nav() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "py-4 bg-[#050810]/90 backdrop-blur-2xl border-b border-white/5"
+          ? "py-4 bg-[#050810]/92 backdrop-blur-2xl border-b border-white/6"
           : "py-7"
       }`}
+      style={scrolled ? { boxShadow: "0 1px 40px rgba(0,0,0,0.4)" } : {}}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
@@ -72,7 +73,7 @@ export default function Nav() {
           className="hidden md:inline-flex btn-outline text-xs"
           style={{ padding: "10px 24px" }}
         >
-          Let&apos;s Talk
+          Discuss Project
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
@@ -110,7 +111,7 @@ export default function Nav() {
             </a>
           ))}
           <a href="#contact" className="btn-primary mt-2 justify-center" style={{ padding: "12px 24px" }}>
-            Let&apos;s Talk
+            Discuss Project
           </a>
         </div>
       </div>

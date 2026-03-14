@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Syne, Inter } from "next/font/google";
+import { Ubuntu, Inter } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
 
-const syne = Syne({
+const ubuntu = Ubuntu({
   variable: "--font-syne",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "700"],
   display: "swap",
 });
 
@@ -18,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Clarity One Studios — Creative Design Agency",
+  title: "Clarity One Studios | Software Development Agency",
   description:
-    "Premium creative studio specializing in brand identity, digital experiences, and creative direction.",
+    "Software development agency building custom web apps, internal tools, and digital platforms for growing businesses.",
   icons: {
     icon: "/logo.png",
   },
@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${syne.variable} ${inter.variable} antialiased`}>
+      <body className={`${ubuntu.variable} ${inter.variable} antialiased`}>
         {children}
         <Toaster position="bottom-center" theme="dark" richColors />
       </body>
