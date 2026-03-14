@@ -162,85 +162,6 @@ function IconIntegration() {
   );
 }
 
-/* ─── SVG: Portfolio Thumbnails ───────────────────────────────── */
-function ThumbArc() {
-  return (
-    <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full port-thumb">
-      <rect width="400" height="280" fill="#0c0c0f" />
-      <path d="M 25 268 A 248 248 0 0 1 378 22"  stroke="#5db8e8" strokeWidth="1.5" strokeOpacity="0.65" />
-      <path d="M 58 268 A 210 210 0 0 1 348 52"  stroke="#5db8e8" strokeWidth="1"   strokeOpacity="0.35" />
-      <path d="M 100 268 A 168 168 0 0 1 310 85" stroke="#5db8e8" strokeWidth="1"   strokeOpacity="0.2" />
-      <path d="M 145 268 A 125 125 0 0 1 272 118" stroke="#5db8e8" strokeWidth="0.7" strokeOpacity="0.13" />
-      <circle cx="378" cy="22"  r="5.5" fill="#5db8e8" fillOpacity="0.85" />
-      <circle cx="378" cy="22"  r="14" stroke="#5db8e8" strokeOpacity="0.18" strokeWidth="1" />
-      <line   x1="25"  y1="268" x2="170" y2="268" stroke="#5db8e8" strokeOpacity="0.12" strokeWidth="1" />
-      <rect x="25" y="252" width="55" height="1.5" fill="#5db8e8" fillOpacity="0.35" rx="1"/>
-    </svg>
-  );
-}
-function ThumbNodes() {
-  return (
-    <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full port-thumb">
-      <rect width="400" height="280" fill="#080c18" />
-      {[1,2,3,4].map(i => (
-        <line key={`v${i}`} x1={i*100} y1="0" x2={i*100} y2="280" stroke="#7c9ee8" strokeOpacity="0.06" strokeWidth="1" />
-      ))}
-      {[1,2].map(i => (
-        <line key={`h${i}`} x1="0" y1={i*93} x2="400" y2={i*93} stroke="#7c9ee8" strokeOpacity="0.06" strokeWidth="1" />
-      ))}
-      <circle cx="200" cy="140" r="8"  fill="#7c9ee8" fillOpacity="0.9" />
-      <circle cx="200" cy="140" r="22" stroke="#7c9ee8" strokeOpacity="0.18" strokeWidth="1" />
-      <circle cx="200" cy="140" r="65" stroke="#7c9ee8" strokeOpacity="0.07" strokeWidth="1" strokeDasharray="5 10" />
-      <circle cx="97"  cy="65"  r="4.5" fill="#7c9ee8" fillOpacity="0.6" />
-      <circle cx="310" cy="65"  r="4.5" fill="#7c9ee8" fillOpacity="0.6" />
-      <circle cx="88"  cy="215" r="4.5" fill="#7c9ee8" fillOpacity="0.6" />
-      <circle cx="318" cy="215" r="4.5" fill="#7c9ee8" fillOpacity="0.6" />
-      <circle cx="200" cy="28"  r="3"   fill="#5db8e8" fillOpacity="0.55" />
-      <line x1="200" y1="140" x2="97"  y2="65"  stroke="#7c9ee8" strokeOpacity="0.28" strokeWidth="1" />
-      <line x1="200" y1="140" x2="310" y2="65"  stroke="#7c9ee8" strokeOpacity="0.28" strokeWidth="1" />
-      <line x1="200" y1="140" x2="88"  y2="215" stroke="#7c9ee8" strokeOpacity="0.28" strokeWidth="1" />
-      <line x1="200" y1="140" x2="318" y2="215" stroke="#7c9ee8" strokeOpacity="0.28" strokeWidth="1" />
-      <line x1="200" y1="140" x2="200" y2="28"  stroke="#5db8e8" strokeOpacity="0.2"  strokeWidth="1" />
-    </svg>
-  );
-}
-function ThumbSlice() {
-  return (
-    <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full port-thumb">
-      <rect width="400" height="280" fill="#0f080f" />
-      <polygon points="0,0 190,0 295,280 105,280" fill="rgba(180,100,240,0.065)" />
-      <polygon points="130,0 310,0 400,175 400,280 230,280" fill="rgba(220,120,255,0.04)" />
-      <line x1="0"   y1="0"   x2="400" y2="280" stroke="#b464f0" strokeOpacity="0.12" strokeWidth="1" />
-      <line x1="105" y1="0"   x2="400" y2="218" stroke="#b464f0" strokeOpacity="0.08" strokeWidth="1" />
-      <line x1="210" y1="0"   x2="400" y2="140" stroke="#b464f0" strokeOpacity="0.05" strokeWidth="1" />
-      <circle cx="325" cy="75"  r="42" stroke="#b464f0" strokeOpacity="0.18" strokeWidth="1" />
-      <circle cx="325" cy="75"  r="7"  fill="#b464f0" fillOpacity="0.55" />
-      <circle cx="325" cy="75"  r="16" stroke="#b464f0" strokeOpacity="0.1" strokeWidth="1" />
-      <rect x="22" y="238" width="62" height="1.5" fill="#5db8e8" fillOpacity="0.32" rx="1" />
-      <rect x="22" y="247" width="38" height="1" fill="#5db8e8" fillOpacity="0.16" rx="1" />
-    </svg>
-  );
-}
-function ThumbGrid() {
-  return (
-    <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full port-thumb">
-      <rect width="400" height="280" fill="#09090b" />
-      <rect x="72"  y="52"  width="256" height="176" stroke="rgba(255,255,255,0.1)"  strokeWidth="1" />
-      <rect x="104" y="84"  width="192" height="112" stroke="rgba(255,255,255,0.055)" strokeWidth="1" />
-      <line x1="200" y1="52"  x2="200" y2="228" stroke="rgba(255,255,255,0.065)" strokeWidth="1" />
-      <line x1="72"  y1="140" x2="328" y2="140" stroke="rgba(255,255,255,0.065)" strokeWidth="1" />
-      {/* Corner brackets */}
-      <path d="M72 72  L72 52  L92 52"  stroke="rgba(255,255,255,0.32)" strokeWidth="1.5" fill="none" />
-      <path d="M328 72 L328 52 L308 52" stroke="rgba(255,255,255,0.32)" strokeWidth="1.5" fill="none" />
-      <path d="M72 208 L72 228 L92 228" stroke="rgba(255,255,255,0.32)" strokeWidth="1.5" fill="none" />
-      <path d="M328 208 L328 228 L308 228" stroke="rgba(255,255,255,0.32)" strokeWidth="1.5" fill="none" />
-      <circle cx="200" cy="140" r="4" fill="rgba(255,255,255,0.5)" />
-      <circle cx="200" cy="140" r="11" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
-      <line x1="72" y1="256" x2="220" y2="256" stroke="#5db8e8" strokeOpacity="0.38" strokeWidth="1.5" />
-    </svg>
-  );
-}
-
 /* ─── Arrow Icon ──────────────────────────────────────────────── */
 function ArrowRight({ size = 16 }: { size?: number }) {
   return (
@@ -303,10 +224,42 @@ export default function Home() {
   ];
 
   const portfolio = [
-    { thumb: <ThumbArc />,   num: "01", cat: "SaaS Product", title: "Customer-facing platform build" },
-    { thumb: <ThumbNodes />, num: "02", cat: "Operations",   title: "Internal workflow and reporting hub" },
-    { thumb: <ThumbSlice />, num: "03", cat: "Automation",   title: "AI-assisted knowledge workflow" },
-    { thumb: <ThumbGrid />,  num: "04", cat: "Client Portal", title: "Secure self-service experience" },
+    {
+      src: "/jackie.png",
+      num: "01",
+      cat: "Logistics Platform",
+      title: "Jackie",
+      summary: "On-demand delivery and mobility product built for fast booking, dispatch, and customer trust.",
+      tags: ["Consumer App", "Operations"],
+      objectPosition: "center top",
+    },
+    {
+      src: "/01.webp",
+      num: "02",
+      cat: "AI Product",
+      title: "PhotoMe",
+      summary: "AI-powered photo enhancement experience spanning a polished web landing page and mobile onboarding flow.",
+      tags: ["AI Workflow", "Web + Mobile"],
+      objectPosition: "center center",
+    },
+    {
+      src: "/01-3.webp",
+      num: "03",
+      cat: "Fintech Utility",
+      title: "Currency Watch",
+      summary: "Exchange-rate tracking app that helps users compare market pricing and make smarter currency decisions.",
+      tags: ["Finance", "Mobile App"],
+      objectPosition: "center center",
+    },
+    {
+      src: "/01-2.webp",
+      num: "04",
+      cat: "Food Intelligence",
+      title: "BiteBeam",
+      summary: "Nutrition-focused mobile product for scanning meals, tracking dishes, and turning food data into insight.",
+      tags: ["Consumer AI", "Health"],
+      objectPosition: "center center",
+    },
   ];
 
   const stats = [
@@ -563,7 +516,7 @@ export default function Home() {
             <AnimatedSection>
               <div className="flex items-end justify-between mb-16 gap-6 flex-wrap">
                 <div className="flex flex-col gap-3">
-                  <span className="section-label">Representative Engagements</span>
+                  <span className="section-label">Selected Projects</span>
                   <h2
                     className="font-display"
                     style={{
@@ -589,64 +542,138 @@ export default function Home() {
               </div>
             </AnimatedSection>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {portfolio.map(({ thumb, num, cat, title }, i) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {portfolio.map(({ src, num, cat, title, summary, tags, objectPosition }, i) => (
                 <AnimatedSection key={num} delay={i * 100}>
                   <div
                     className="portfolio-item relative overflow-hidden cursor-pointer group"
                     style={{
-                      borderRadius: "2px",
+                      borderRadius: "24px",
                       border: "1px solid var(--border)",
-                      aspectRatio: "16/10",
+                      aspectRatio: "16/11",
+                      background: "var(--surface)",
                     }}
                   >
-                    {/* Thumbnail */}
                     <div className="absolute inset-0">
-                      {thumb}
+                      <Image
+                        src={src}
+                        alt={`${title} project preview`}
+                        fill
+                        sizes="(min-width: 1024px) 560px, (min-width: 768px) 50vw, 100vw"
+                        className="port-thumb"
+                        style={{ objectFit: "cover", objectPosition }}
+                      />
                     </div>
 
-                    {/* Bottom meta (always visible) */}
                     <div
-                      className="absolute bottom-0 left-0 right-0 p-5 flex items-end justify-between"
+                      className="absolute inset-0"
                       style={{
-                        background: "linear-gradient(to top, rgba(5,8,16,0.85) 0%, transparent 100%)",
+                        background:
+                          "linear-gradient(180deg, rgba(5,8,16,0.12) 0%, rgba(5,8,16,0) 38%, rgba(5,8,16,0.95) 100%)",
                       }}
-                    >
-                      <div className="flex flex-col gap-1">
-                        <span className="section-label" style={{ color: "var(--accent)" }}>
-                          {cat}
+                    />
+
+                    {/* Hover accent overlay */}
+                    <div
+                      className="port-overlay absolute inset-0 pointer-events-none"
+                      style={{
+                        background:
+                          "linear-gradient(to top, rgba(93,184,232,0.1) 0%, transparent 55%)",
+                      }}
+                    />
+
+                    <div className="absolute left-5 right-5 top-5 flex items-start justify-between gap-3">
+                      <span
+                        className="section-label"
+                        style={{
+                          color: "#f4f7fb",
+                          background: "rgba(5,8,16,0.6)",
+                          border: "1px solid rgba(255,255,255,0.12)",
+                          borderRadius: "999px",
+                          padding: "0.55rem 0.8rem",
+                          backdropFilter: "blur(12px)",
+                        }}
+                      >
+                        {cat}
+                      </span>
+                      <div className="flex items-center gap-2">
+                        <span
+                          className="section-label port-cta"
+                          style={{
+                            color: "rgba(255,255,255,0.9)",
+                            background: "rgba(93,184,232,0.18)",
+                            border: "1px solid rgba(93,184,232,0.3)",
+                            borderRadius: "999px",
+                            padding: "0.55rem 0.75rem",
+                            backdropFilter: "blur(12px)",
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: "5px",
+                          }}
+                        >
+                          View <ArrowRight size={10} />
                         </span>
+                        <span
+                          className="section-label"
+                          style={{
+                            color: "rgba(255,255,255,0.72)",
+                            background: "rgba(5,8,16,0.52)",
+                            border: "1px solid rgba(255,255,255,0.1)",
+                            borderRadius: "999px",
+                            padding: "0.55rem 0.72rem",
+                            backdropFilter: "blur(12px)",
+                          }}
+                        >
+                          {num}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div
+                      className="absolute bottom-0 left-0 right-0 p-7 flex flex-col gap-3"
+                    >
+                      <div className="flex flex-col gap-2">
                         <span
                           className="font-display"
                           style={{
                             color: "var(--text)",
                             fontFamily: "var(--font-syne), system-ui, sans-serif",
-                            fontSize: "1.1rem",
+                            fontSize: "clamp(1.35rem, 2vw, 1.8rem)",
                           }}
                         >
                           {title}
                         </span>
+                        <p
+                          style={{
+                            color: "rgba(232,237,244,0.78)",
+                            fontFamily: "var(--font-inter), sans-serif",
+                            fontSize: "0.9rem",
+                            lineHeight: "1.7",
+                            fontWeight: 300,
+                          }}
+                        >
+                          {summary}
+                        </p>
                       </div>
-                      <span
-                        className="section-label"
-                        style={{ color: "rgba(93,184,232,0.4)" }}
-                      >
-                        {num}
-                      </span>
-                    </div>
 
-                    {/* Hover overlay */}
-                    <div
-                      className="port-overlay absolute inset-0 flex items-center justify-center"
-                      style={{ background: "rgba(5,8,16,0.55)", backdropFilter: "blur(2px)" }}
-                    >
-                      <span
-                        className="btn-outline text-xs"
-                        style={{ padding: "10px 24px" }}
-                      >
-                        Similar engagement
-                        <ArrowRight size={12} />
-                      </span>
+                      <div className="flex flex-wrap items-center gap-2 pt-1">
+                        {tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="section-label"
+                            style={{
+                              color: "rgba(255,255,255,0.75)",
+                              background: "rgba(255,255,255,0.07)",
+                              border: "1px solid rgba(255,255,255,0.12)",
+                              borderRadius: "999px",
+                              padding: "0.5rem 0.72rem",
+                              letterSpacing: "0.16em",
+                            }}
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </AnimatedSection>
